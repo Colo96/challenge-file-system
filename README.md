@@ -11,6 +11,13 @@ Este proyecto implementa un simulador básico de un sistema de archivos similar 
 - **Mostrar ruta actual**: Usa `pwd` para mostrar la ruta completa donde el usuario se encuentra.
 - **Salir**: Usa `exit` para salir del simulador.
 
+## Definiciones Adicionales y Suposiciones
+
+- **Simulación en Memoria**: Este programa simula un sistema de archivos en memoria utilizando estructuras de datos (`Directory`, `File`), sin realizar interacciones reales con el sistema de archivos del host.
+- **Comandos Simplificados**: Los comandos como `ls()` solo listan los archivos y carpetas en el directorio actual, sin explorar propiedades avanzadas de los archivos o carpetas.
+- **Nombres de Archivos y Directorios**: No se aplican restricciones avanzadas de nombres de archivos o carpetas que podrían estar presentes en sistemas de archivos reales.
+- **Sin Manejo Avanzado de Errores**: Esta versión del simulador no maneja casos como la creación de archivos duplicados o la verificación de permisos.
+
 ## Requisitos
 
 - [Go](https://golang.org/doc/install) (versión 1.13 o superior)
